@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.category {
+    width: 3.5rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    margin-right: 12rem;
+}
+
+.category div {
+    width: 100%;
+    height: 0.6rem;
+    background-color: #ffff;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.category.rotate div:nth-child(1) {
+    transform: rotate(180deg);
+    position: relative;
+}
+
+.category.rotate div:nth-child(2) {
+    transform: rotate(180deg);
+    position: relative;
+}
+
+.category.rotate div:nth-child(3) {
+    transform: rotate(180deg);
+    position: relative;
+}
+.openMenu {
+    position: fixed;
+    top: 0.1rem;
+    right: -20rem;
+    width: 12rem;
+    height: 18rem;
+    background-color: #2C3E50;
+    color: white;
+    transition: right 0.4s ease;
+    padding-top: 0.5rem;
+    border: 0.2rem solid #CFE5FF;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 10rem rgb(98, 98, 255);
+}
+
+.openMenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.openMenu ul li {
+    margin: 0.5rem 0;
+}
+
+.openMenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding:0.1rem 1rem 1rem 0.1rem;
+    display: block;
+}
+
+.openMenu ul li a i {
+    margin-right: 0.5rem;
+}
+.openMenu ul li a:hover {
+    text-decoration: underline;
+}
+.General-container{
+    background-color: #FFFFFF;
+    display: flex;
+}
+.left-side{
+    float: left;
+    margin-top: 0.5rem;
+    margin-left: 0.1rem;
+    width: 35vh; 
+    background-color: #2C3E50;
+    border: 0.2rem solid #7C1034;
+    border-radius: 0.3rem;
+    height: 45vh; 
+    overflow-y: auto; 
+}
+
+.left-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    height: 100%; 
+}
+
+.left-container ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.left-container li{
+    padding-bottom: 0.5rem;
+    margin-left: 1.5rem;
+    color: white;
+}
+.left-container li i{
+    margin-right: 0.7rem;
+}
+
+.middle-container{
+    background-color: #ffffff;
+    width: 40%;
+    margin-left: 6rem;
+    border-radius: 5rem;
+    border: 0.1rem solid #7C1034;
+    margin-top: 1rem;
+}
+.middle-comment{
+    background-color: #FFFFFF;
+    width: 20%;
+    border-radius: 5rem;
+    border: 0.1rem solid #7C1034;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    overflow-y: auto;
+}
+
