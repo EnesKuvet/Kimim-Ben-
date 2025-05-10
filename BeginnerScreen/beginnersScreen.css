@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-image: url(/background\ image.webp);
+    background-position: center;
+}
+
+.centertext a {
+    margin-left: 0.5rem;
+}
+
+.centertext h1 {
+    margin-top: 3rem;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.centertext h3 {
+    margin-top: 2rem;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 1);
+    font-style: oblique;
+    padding-bottom: 2rem;
+}
+
+.centerbutton {
+    background-color: #CFE5FF;
+    text-decoration: none;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: black;
+    font-size: 1.3rem;
+    transition: 0.4s;
+}
+
+.centerbutton:hover {
+    background-color: cornsilk;
+    color: #7C1034;
+    transform: scale(1.5);
+}
+
+
+.general-container {
+    background-image: url('/background image.webp');
+    background-position: center;
+    height: 25rem;
+    padding-top: 2rem;
+}
+
+
+.middleContainer {
+    background-color: #CFE5FF;
+    display: flex;
+    border-radius: 8rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transition: 0.2s ease;
+}
+
+.middle-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 60%;
+    margin-left: 3rem;
+    opacity: 0;
+
+    transform: translateX(-100%);
+
+    animation: slideInText 1s 1s forwards;
+
+}
+
+.middle-text h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    text-shadow: 0.2rem 0.8rem 1rem rgba(0, 0, 0, 4);
+}
+
+.middle-text h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 1);
+}
+
+
+.meet-image {
+    background-image: url('/whoAm-I.png');
+    background-size: 100% 100%;
+    width: 30%;
+    height: 20rem;
+    background-position: center;
+    border-radius: 3rem;
+    margin: 2rem;
+    box-shadow: 2rem 2rem 2rem rgba(0.5, 0.5, 0.5, 5);
+    opacity: 0;
+
+    transform: translateX(-100%);
+
+    animation: slideInImage 1s 0.5s forwards;
+
+}
+
+
+@keyframes slideInText {
+    0% {
+        opacity: 0;
+        transform: translateX(-400%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInImage {
+    0% {
+        opacity: 0;
+        transform: translateX(-400%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
